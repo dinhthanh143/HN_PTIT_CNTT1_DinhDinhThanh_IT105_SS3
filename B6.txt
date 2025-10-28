@@ -1,0 +1,24 @@
+Tên Use Case: Đặt hàng
+Actor:
+-Khách hàng
+-Hệ thống giao đồ ăn
+-Chủ cửa hàng
+
+Mục tiêu:
+Khách hàng đặt món ăn từ cửa hàng yêu thích thông qua ứng dụng để được giao tận nơi.
+
+Luồng chính:
+-Khách hàng đăng nhập vào ứng dụng giao đồ ăn.
+-Khách hàng tìm kiếm cửa hàng hoặc món ăn mong muốn.
+-Hệ thống hiển thị danh sách cửa hàng và món ăn phù hợp.
+-Khách hàng chọn món ăn, thêm vào giỏ hàng, và xác nhận đơn đặt.
+-Hệ thống hiển thị tổng giá tiền (bao gồm phí giao hàng, thuế nếu có).
+-Khách hàng chọn phương thức thanh toán (tiền mặt, ví điện tử, thẻ).
+-Hệ thống gửi đơn hàng đến cửa hàng tương ứng.
+-Chủ cửa hàng xác nhận đơn hàng và chuẩn bị món ăn.
+-Hệ thống thông báo trạng thái “Đơn hàng đang được chuẩn bị” cho khách hàng.
+
+Luồng lỗi:
+-Nếu cửa hàng không phản hồi, hệ thống thông báo “Cửa hàng tạm ngừng nhận đơn”.
+-Nếu phương thức thanh toán thất bại, hệ thống yêu cầu khách hàng chọn lại hoặc thử phương thức khác.
+-Nếu kết nối mạng bị gián đoạn, hệ thống hiển thị thông báo lỗi và yêu cầu thử lại sau.
